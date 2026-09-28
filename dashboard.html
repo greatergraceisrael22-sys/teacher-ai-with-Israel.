@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f3">
+    <meta name="description" content="Your Teacher AI with Israel workspace for planning lessons and classroom resources.">
+    <title>Workspace | Teacher AI with Israel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="dashboard-page" data-dashboard>
+    <aside class="sidebar" data-sidebar>
+      <a class="brand sidebar-brand" href="index.html"><span class="brand-mark"><i data-lucide="book-open-check"></i></span><span class="brand-name">Teacher AI <span>with Israel</span></span></a>
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="sidebar-nav" aria-label="Workspace navigation" data-dashboard-nav>
+        <button class="sidebar-link is-active" type="button" data-view="overview"><i data-lucide="layout-dashboard"></i><span>Overview</span></button>
+        <span class="sidebar-group-label">CREATE</span>
+        <button class="sidebar-link" type="button" data-view="lesson"><i data-lucide="notebook-pen"></i><span>Lesson note</span></button>
+        <button class="sidebar-link" type="button" data-view="presentation"><i data-lucide="presentation"></i><span>Presentation</span></button>
+        <button class="sidebar-link" type="button" data-view="worksheet"><i data-lucide="file-check-2"></i><span>Worksheet</span></button>
+        <button class="sidebar-link" type="button" data-view="assessment"><i data-lucide="clipboard-check"></i><span>Test & quiz</span></button>
+        <button class="sidebar-link" type="button" data-view="term"><i data-lucide="calendar-days"></i><span>Term planner</span></button>
+        <span class="sidebar-group-label sidebar-group-lower">ORGANIZE</span>
+        <button class="sidebar-link" type="button" data-view="resources"><i data-lucide="library-big"></i><span>My resources</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-status"><span class="status-dot"></span><span><strong>Early access</strong><small>AI tools in development</small></span></div>
+        <a class="sidebar-home" href="index.html"><i data-lucide="arrow-left"></i> Back to home</a>
+        <div class="sidebar-profile"><span class="profile-avatar"><i data-lucide="user-round"></i></span><span><strong>Teacher workspace</strong><small>Welcome, educator</small></span><i class="profile-more" data-lucide="ellipsis"></i></div>
+      </div>
+    </aside>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <button class="icon-button sidebar-toggle" type="button" aria-label="Open workspace navigation" aria-expanded="false" data-sidebar-toggle><i data-lucide="menu"></i></button>
+        <div class="breadcrumbs"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span data-breadcrumb>Overview</span></div>
+        <span class="topbar-status"><span class="status-dot"></span> Early access</span>
+        <button class="topbar-user" type="button" aria-label="Teacher workspace"><span class="profile-avatar"><i data-lucide="user-round"></i></span></button>
+      </header>
+      <main class="dashboard-content">
+        <section class="dashboard-view overview-view" data-screen="overview">
+          <div class="dashboard-welcome"><div><p class="eyebrow">YOUR TEACHING SPACE</p><h1>A good day to plan, Teacher.</h1><p>What would you like to work on?</p></div><div class="welcome-date"><i data-lucide="calendar-days"></i><span>Made for the work<br>happening in your classroom</span></div></div>
+          <div class="development-banner"><span class="banner-icon"><i data-lucide="sparkles"></i></span><div><strong>Your workspace is taking shape</strong><p>Explore the planning tools below. AI-assisted creation is coming soon.</p></div><span class="banner-tag">IN DEVELOPMENT</span></div>
+          <div class="workspace-heading"><div><p class="eyebrow">YOUR TOOLKIT</p><h2>Where shall we begin?</h2></div></div>
+          <div class="tool-grid">
+            <button class="tool-card tool-card-leaf" type="button" data-view="lesson"><span class="tool-card-icon"><i data-lucide="notebook-pen"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Lesson note</strong><small>Plan a clear, focused lesson</small><span class="tool-card-meta">GENERATOR <i data-lucide="lock-keyhole"></i></span></button>
+            <button class="tool-card tool-card-coral" type="button" data-view="presentation"><span class="tool-card-icon"><i data-lucide="presentation"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Presentation maker</strong><small>Outline your next class slides</small><span class="tool-card-meta">GENERATOR <i data-lucide="lock-keyhole"></i></span></button>
+            <button class="tool-card tool-card-sky" type="button" data-view="worksheet"><span class="tool-card-icon"><i data-lucide="file-check-2"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Worksheet</strong><small>Prepare activities for learners</small><span class="tool-card-meta">GENERATOR <i data-lucide="lock-keyhole"></i></span></button>
+            <button class="tool-card tool-card-sun" type="button" data-view="assessment"><span class="tool-card-icon"><i data-lucide="clipboard-check"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Test & quiz maker</strong><small>Plan a check for understanding</small><span class="tool-card-meta">GENERATOR <i data-lucide="lock-keyhole"></i></span></button>
+            <button class="tool-card tool-card-lilac" type="button" data-view="term"><span class="tool-card-icon"><i data-lucide="calendar-days"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>Term planner</strong><small>Map out your weeks ahead</small><span class="tool-card-meta">PLANNER <i data-lucide="lock-keyhole"></i></span></button>
+            <button class="tool-card tool-card-mint" type="button" data-view="resources"><span class="tool-card-icon"><i data-lucide="library-big"></i></span><span class="tool-card-arrow"><i data-lucide="arrow-up-right"></i></span><strong>My resources</strong><small>Keep your teaching materials close</small><span class="tool-card-meta">LIBRARY <i data-lucide="arrow-up-right"></i></span></button>
+          </div>
+          <section class="recent-section"><div class="recent-heading"><div><p class="eyebrow">YOUR LIBRARY</p><h2>Recent resources</h2></div><button class="subtle-link" type="button" data-view="resources">View library <i data-lucide="arrow-right"></i></button></div><div class="empty-resources"><span class="empty-icon"><i data-lucide="files"></i></span><div><strong>Your resources will live here</strong><p>Lesson plans, activities, and teaching materials in one place.</p></div><button class="button button-outline button-small" type="button" data-view="resources">Open my resources <i data-lucide="arrow-right"></i></button></div></section>
+        </section>
+        <section class="dashboard-view tool-view" data-screen="tool" hidden></section>
+        <section class="dashboard-view resources-view" data-screen="resources" hidden></section>
+      </main>
+      <footer class="dashboard-footer"><span>Teacher AI with Israel</span><span>Thoughtful tools for the people who teach.</span></footer>
+    </div>
+  </body>
+</html>
